@@ -1,41 +1,5 @@
 import java.util.Arrays;
 
-/**
- * ============================================================
- *  UPTMMarketingOptimization.java
- *  MAIN RUNNER — calls all algorithm classes.
- *
- *  Course  : SWC3524 / SWC4423
- *  Project : Marketing Campaign Optimization Problem (MCOP)
- *
- *  HOW TO RUN IN BLUEJ:
- *    1. Place ALL .java files in the same BlueJ project folder:
- *         MCOPData.java
- *         GreedyMCOP.java
- *         DynamicProgrammingMCOP.java
- *         BacktrackingMCOP.java
- *         DivideAndConquerMCOP.java
- *         SortingSearchingMCOP.java
- *         MinHeap.java
- *         SplayTree.java
- *         UPTMMarketingOptimization.java  ← this file
- *    2. Click Compile (or press Ctrl + K).
- *    3. Right-click UPTMMarketingOptimization → main → OK.
- *    4. View output in the BlueJ terminal window.
- *
- *  EXPECTED OUTPUT:
- *    Greedy Route: UPTM -> City B -> City D -> City C -> UPTM | Total Cost: 88
- *    Dynamic Programming Route: UPTM -> City B -> City D -> City C -> UPTM | Total Cost: 88
- *    Backtracking Route: UPTM -> City B -> City D -> City C -> UPTM | Total Cost: 88
- *    Divide & Conquer Route: UPTM -> City B -> City D -> City C -> UPTM | Total Cost: 88
- *
- *    Sorted Array: [1, 2, 3, 5, 8, 9]
- *    Binary Search (5 found at index): 3
- *
- *    Min-Heap Extract Min: 3
- *    Splay Tree Search (10 found): true
- * ============================================================
- */
 public class UPTMMarketingOptimization {
 
     public static void main(String[] args) {
