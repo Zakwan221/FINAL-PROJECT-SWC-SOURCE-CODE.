@@ -1,42 +1,6 @@
-/**
- * ============================================================
- *  GreedyMCOP.java
- *  Algorithm : Greedy (Nearest-Neighbour Heuristic)
- *
- *  CONCEPT:
- *    A greedy algorithm makes the LOCALLY OPTIMAL choice at
- *    every step, hoping it leads to a globally optimal result.
- *    For MCOP, "locally optimal" means always travelling to the
- *    NEAREST unvisited city next.
- *
- *  HOW IT WORKS (step by step):
- *    1. Start at UPTM (city 0).
- *    2. Look at all unvisited cities — pick the one with the
- *       lowest travel cost from the current position.
- *    3. Move to that city and mark it visited.
- *    4. Repeat steps 2–3 until all cities are visited.
- *    5. Return home to UPTM.
- *
- *  ADVANTAGE:
- *    Very fast — O(n²) time. Easy to understand and implement.
- *
- *  LIMITATION:
- *    Does NOT guarantee the globally shortest route.
- *    An early greedy choice can block a cheaper overall path.
- *
- *  For this dataset the greedy and optimal routes happen to
- *  match (both = 88), but this is not always the case.
- * ============================================================
- */
+
 public class GreedyMCOP {
 
-    /**
-     * Solves the MCOP using the greedy nearest-neighbour heuristic.
-     *
-     * @param dist      cost matrix (from MCOPData.costMatrix)
-     * @param locations city names  (from MCOPData.locations)
-     * @return          result string with the route and total cost
-     */
     public static String greedyMCOP(int[][] dist, String[] locations) {
 
         int n         = dist.length;
